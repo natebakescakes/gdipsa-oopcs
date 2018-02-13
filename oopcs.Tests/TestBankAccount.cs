@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using oopcs.Day1;
+using Workshops.Workshop3;
 
 namespace oopcs.Tests
 {
@@ -19,32 +19,32 @@ namespace oopcs.Tests
         [TestMethod]
         public void TestBankAccountInit()
         {
-            Assert.AreEqual(2000, a.Show());
-            Assert.AreEqual(5000, b.Show());
+            Assert.AreEqual(2000, a.Balance);
+            Assert.AreEqual(5000, b.Balance);
         }
 
         [TestMethod]
         public void TestDepositScenario()
         {
             a.Deposit(100);
-            Assert.AreEqual(2100, a.Show());
-            Assert.AreEqual(5000, b.Show());
+            Assert.AreEqual(2100, a.Balance);
+            Assert.AreEqual(5000, b.Balance);
         }
 
         [TestMethod]
         public void TestWithdrawScenario()
         {
             a.Withdraw(200);
-            Assert.AreEqual(1800, a.Show());
-            Assert.AreEqual(5000, b.Show());
+            Assert.AreEqual(1800, a.Balance);
+            Assert.AreEqual(5000, b.Balance);
         }
 
         [TestMethod]
         public void TestTransferScenario()
         {
             a.TransferTo(300, b);
-            Assert.AreEqual(1700, a.Show());
-            Assert.AreEqual(5300, b.Show());
+            Assert.AreEqual(1700, a.Balance);
+            Assert.AreEqual(5300, b.Balance);
         }
     }
 }

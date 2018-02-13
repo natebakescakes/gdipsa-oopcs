@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oopcs.Day1
+namespace Workshops.Workshop3
 {
     public class BankAccount
     {
@@ -36,11 +36,6 @@ namespace oopcs.Day1
         {
             this.Withdraw(amount);
             another.Deposit(amount);
-        }
-
-        public double Show()
-        {
-            return Balance;
         }
     }
 }

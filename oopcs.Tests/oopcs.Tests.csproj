@@ -59,9 +59,9 @@
       <Project>{f7a48824-9b1d-4bd4-a56c-4ad680d9ec0a}</Project>
       <Name>Day1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\oopcs\Day2\Day2.csproj">
-      <Project>{c7bedf3f-3892-4ad0-b4c9-94fcd78c6978}</Project>
-      <Name>Day2</Name>
+    <ProjectReference Include="..\oopcs\Workshop3\Workshop3.csproj">
+      <Project>{387f5460-0c6e-4656-868f-30e9697a5552}</Project>
+      <Name>Workshop3</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

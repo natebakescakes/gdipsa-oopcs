@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oopcs.Day1
+namespace Day2
 {
     class Program
     {

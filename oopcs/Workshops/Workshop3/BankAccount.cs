@@ -32,10 +32,10 @@ namespace Workshops.Workshop3
             Balance += amount;
         }
 
-        public void TransferTo(double amount, BankAccount another)
+        public void TransferTo(double amount, BankAccount other)
         {
             Withdraw(amount);
-            another.Deposit(amount);
+            other.Deposit(amount);
         }
     }
 }

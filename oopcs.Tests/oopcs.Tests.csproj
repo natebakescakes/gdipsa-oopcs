@@ -50,9 +50,21 @@
   <ItemGroup>
     <Compile Include="TestBankAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestProduct.cs" />
+    <Compile Include="TestCustomer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\oopcs\Lectures\Day2\Day2.csproj">
+      <Project>{c7bedf3f-3892-4ad0-b4c9-94fcd78c6978}</Project>
+      <Name>Day2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\oopcs\Workshops\Workshop3\Workshop3.csproj">
+      <Project>{387f5460-0c6e-4656-868f-30e9697a5552}</Project>
+      <Name>Workshop3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

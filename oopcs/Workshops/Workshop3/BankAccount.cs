@@ -9,14 +9,14 @@ namespace Workshops.Workshop3
     public class BankAccount
     {
         public string AccountNumber { get; set; }
-        public string AccountHolderName { get; set; }
+        public Customer AccountHolder { get; set; }
         public double Balance { get; set; }
 
-        public BankAccount(string accountNumber, string accountHolderName, double balance)
+        public BankAccount(string accountNumber, Customer accountHolder, double balance)
         {
-            this.AccountNumber = accountNumber;
-            this.AccountHolderName = accountHolderName;
-            this.Balance = balance;
+            AccountNumber = accountNumber;
+            AccountHolder = accountHolder;
+            Balance = balance;
         }
 
         public void Withdraw(double amount)
@@ -29,12 +29,12 @@ namespace Workshops.Workshop3
 
         public void Deposit(double amount)
         {
-            this.Balance += amount;
+            Balance += amount;
         }
 
         public void TransferTo(double amount, BankAccount another)
         {
-            this.Withdraw(amount);
+            Withdraw(amount);
             another.Deposit(amount);
         }
     }

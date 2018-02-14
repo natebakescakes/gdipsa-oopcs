@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C7BEDF3F-3892-4AD0-B4C9-94FCD78C6978}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day2</RootNamespace>
-    <AssemblyName>Day2</AssemblyName>
+    <RootNamespace>Lectures.Day2</RootNamespace>
+    <AssemblyName>Lectures.Day2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

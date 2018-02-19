@@ -4,11 +4,13 @@
     {
         private string _name;
         private Order order;
+        public static int numberOfCustomers = 0;
 
         public Customer(string name)
         {
             _name = name;
             order = new Order(8);
+            numberOfCustomers++;
         }
 
         public void Buy(Product p)

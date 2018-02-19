@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop3", "oopcs\Workshop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourExercise", "oopcs\Workshops\TourExercise\TourExercise.csproj", "{8E65AA2E-BC02-4D95-A28F-B6EFF8C5246D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourExercise.Test", "Tour.Test\TourExercise.Test.csproj", "{FE0981F6-F901-4CE9-9715-D15269EFB3B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourExercise.Test", "TourExercise.Test\TourExercise.Test.csproj", "{FE0981F6-F901-4CE9-9715-D15269EFB3B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

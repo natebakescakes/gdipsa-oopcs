@@ -17,6 +17,7 @@ namespace Workshops.Workshop3
             AccountNumber = accountNumber;
             AccountHolder = accountHolder;
             Balance = balance;
+            accountHolder.AddAccount(this);
         }
 
         public void Withdraw(double amount)

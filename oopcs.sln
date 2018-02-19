@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourExercise.Test", "TourEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3", "oopcs\Lectures\Day3\Day3.csproj", "{01DA93FF-2CE8-4E95-8E52-CD84498C663D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop4", "oopcs\Workshops\Workshop4\Workshop4.csproj", "{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{01DA93FF-2CE8-4E95-8E52-CD84498C663D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01DA93FF-2CE8-4E95-8E52-CD84498C663D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01DA93FF-2CE8-4E95-8E52-CD84498C663D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{387F5460-0C6E-4656-868F-30E9697A5552} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 		{8E65AA2E-BC02-4D95-A28F-B6EFF8C5246D} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 		{01DA93FF-2CE8-4E95-8E52-CD84498C663D} = {B588CCC8-1403-4033-B902-C6D34C2EC2F8}
+		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEFAFC6C-1B3C-4A4B-A1ED-EE8180A9F41B}

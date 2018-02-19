@@ -53,6 +53,9 @@
     <Compile Include="TestProduct.cs" />
     <Compile Include="TestCustomer.cs" />
     <Compile Include="TestRational.cs" />
+    <Compile Include="TestSavingsAccount.cs" />
+    <Compile Include="TestCurrentAccount.cs" />
+    <Compile Include="TestOverDraftAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -65,6 +68,10 @@
     <ProjectReference Include="..\oopcs\Workshops\Workshop3\Workshop3.csproj">
       <Project>{387f5460-0c6e-4656-868f-30e9697a5552}</Project>
       <Name>Workshop3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\oopcs\Workshops\Workshop4\Workshop4.csproj">
+      <Project>{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}</Project>
+      <Name>Workshop4</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

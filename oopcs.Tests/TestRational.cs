@@ -59,6 +59,20 @@ namespace oopcs.Tests
         }
 
         [TestMethod]
+        public void TestLessThanComparison()
+        {
+            Assert.IsTrue(new Rational(1, 3) < new Rational(1, 2));
+            Assert.IsTrue(new Rational(1, 3) <= new Rational(1, 3));
+        }
+
+        [TestMethod]
+        public void TestMoreThanComparison()
+        {
+            Assert.IsTrue(new Rational(1, 2) > new Rational(1, 3));
+            Assert.IsTrue(new Rational(1, 2) >= new Rational(1, 2));
+        }
+
+        [TestMethod]
         public void TestComplexOperations()
         {
             Rational a = new Rational(1, 2);

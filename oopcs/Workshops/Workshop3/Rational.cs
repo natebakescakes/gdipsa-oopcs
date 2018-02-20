@@ -2,7 +2,7 @@
 
 namespace Workshops.Workshop3
 {
-    public class Rational : IEquatable<Rational>
+    public class Rational : IEquatable<Rational>, IComparable<Rational>
     {
         public int Numerator { get; set; }
         public int Denominator { get; set; }
@@ -25,7 +25,7 @@ namespace Workshops.Workshop3
             }
         }
 
-        private int GCD (int a, int b)
+        private int GCD(int a, int b)
         {
             while (a != 0 && b != 0)
             {
@@ -36,6 +36,11 @@ namespace Workshops.Workshop3
             }
 
             return a == 0 ? b : a;
+        }
+
+        private int LCM(int a, int b)
+        {
+            return a * b / GCD(a, b);
         }
 
         public Rational Add(Rational other)
@@ -93,9 +98,10 @@ namespace Workshops.Workshop3
             if (obj == null)
                 return false;
 
-            var toCompareWith = obj as Rational;
+            if (obj.GetType() == this.GetType())
+                return this.CompareTo((Rational)obj) == 0;
 
-            return Numerator == toCompareWith.Numerator && Denominator == toCompareWith.Denominator;
+            return false;
         }
 
         public override int GetHashCode()
@@ -105,7 +111,25 @@ namespace Workshops.Workshop3
 
         public bool Equals(Rational other)
         {
-            return this.Equals(other);
+            if (this.CompareTo(other) == 0)
+                return true;
+
+            return false;
+        }
+        #endregion
+
+        #region CompareTo Code Block
+        public int CompareTo(Rational other)
+        {
+            int thisComparer = this.Numerator * (LCM(this.Denominator, other.Denominator) / this.Denominator);
+            int otherComparer = other.Numerator * (LCM(this.Denominator, other.Denominator) / other.Denominator);
+
+            if (thisComparer < otherComparer)
+                return -1;
+            else if (thisComparer == otherComparer)
+                return 0;
+            else
+                return 1;
         }
         #endregion
 
@@ -115,9 +139,29 @@ namespace Workshops.Workshop3
             return r1.Equals(r2);
         }
 
-        public static bool operator != (Rational r1, Rational r2)
+        public static bool operator !=(Rational r1, Rational r2)
         {
             return !r1.Equals(r2);
+        }
+
+        public static bool operator <(Rational r1, Rational r2)
+        {
+            return r1.CompareTo(r2) == -1;
+        }
+
+        public static bool operator >(Rational r1, Rational r2)
+        {
+            return r1.CompareTo(r2) == 1;
+        }
+
+        public static bool operator <=(Rational r1, Rational r2)
+        {
+            return r1.CompareTo(r2) == -1 || r1.Equals(r2);
+        }
+
+        public static bool operator >=(Rational r1, Rational r2)
+        {
+            return r1.CompareTo(r2) == 1 || r1.Equals(r2);
         }
 
         public static Rational operator +(Rational r1, Rational r2)

@@ -26,7 +26,7 @@ namespace Workshops.Workshop4
             accountHolder.AddAccount(this);
         }
 
-        public void Withdraw(double amount)
+        public virtual void Withdraw(double amount)
         {
             if (amount > this.Balance)
                 throw new ArgumentException("Withdrawal amount cannot be more than balance");
@@ -45,12 +45,12 @@ namespace Workshops.Workshop4
             other.Deposit(amount);
         }
 
-        public double CalculateInterest()
+        public virtual double CalculateInterest()
         {
             return Balance * InterestRate;
         }
 
-        public void CreditInterest()
+        public virtual void CreditInterest()
         {
             Deposit(CalculateInterest());
         }

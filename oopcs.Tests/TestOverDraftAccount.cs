@@ -18,9 +18,16 @@ namespace oopcs.Tests
         }
 
         [TestMethod]
-        public void TestCalculateInterestRate()
+        public void TestCalculateInterestRatePositive()
         {
             Assert.AreEqual(2.5, account.CalculateInterest());
+        }
+
+        [TestMethod]
+        public void TestCalculateInterestRateNegative()
+        {
+            account.Withdraw(2000);
+            Assert.AreEqual(-60, account.CalculateInterest());
         }
 
         [TestMethod]

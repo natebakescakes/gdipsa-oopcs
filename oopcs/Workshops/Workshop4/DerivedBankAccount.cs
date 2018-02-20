@@ -56,12 +56,12 @@ namespace Workshops.Workshop4
             get { return _creditRate; }
         }
 
-        public new void Withdraw(double amount)
+        public override void Withdraw(double amount)
         {
             Balance -= amount;
         }
 
-        public new double CalculateInterest()
+        public override double CalculateInterest()
         {
             if (Balance > 0)
                 return Balance * InterestRate;
@@ -69,7 +69,7 @@ namespace Workshops.Workshop4
                 return Balance * CreditRate;
         }
 
-        public new void CreditInterest()
+        public override void CreditInterest()
         {
             if (Balance > 0)
                 Deposit(CalculateInterest());

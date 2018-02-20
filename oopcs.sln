@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3", "oopcs\Lectures\Day3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop4", "oopcs\Workshops\Workshop4\Workshop4.csproj", "{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4", "oopcs\Lectures\Day4\Day4.csproj", "{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{8E65AA2E-BC02-4D95-A28F-B6EFF8C5246D} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 		{01DA93FF-2CE8-4E95-8E52-CD84498C663D} = {B588CCC8-1403-4033-B902-C6D34C2EC2F8}
 		{AE2581C6-67D0-486F-A3D4-1E5DBFE8C7E5} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
+		{C8AE1AE8-ECDD-4CFF-8B0F-53F69EE7955D} = {B588CCC8-1403-4033-B902-C6D34C2EC2F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEFAFC6C-1B3C-4A4B-A1ED-EE8180A9F41B}

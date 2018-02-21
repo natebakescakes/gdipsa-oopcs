@@ -124,12 +124,7 @@ namespace Workshops.Workshop3
             int thisComparer = this.Numerator * (LCM(this.Denominator, other.Denominator) / this.Denominator);
             int otherComparer = other.Numerator * (LCM(this.Denominator, other.Denominator) / other.Denominator);
 
-            if (thisComparer < otherComparer)
-                return -1;
-            else if (thisComparer == otherComparer)
-                return 0;
-            else
-                return 1;
+            return thisComparer.CompareTo(otherComparer);
         }
         #endregion
 

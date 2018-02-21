@@ -57,6 +57,8 @@
     <Compile Include="TestCurrentAccount.cs" />
     <Compile Include="TestOverDraftAccount.cs" />
     <Compile Include="TestBankBranch.cs" />
+    <Compile Include="TestInvestments.cs" />
+    <Compile Include="TestShapes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -77,6 +79,10 @@
     <ProjectReference Include="..\oopcs\Workshops\Workshop5\Workshop5.csproj">
       <Project>{51DAF86B-475B-4BA5-B358-5799C4952D7C}</Project>
       <Name>Workshop5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\oopcs\Workshops\Workshop6\Workshop6.csproj">
+      <Project>{FDADB17E-9F8C-4AA8-B952-F39E6FD29F03}</Project>
+      <Name>Workshop6</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

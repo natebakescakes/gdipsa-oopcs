@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lectures", "Lectures", "{B588CCC8-1403-4033-B902-C6D34C2EC2F8}"
 EndProject
@@ -32,6 +32,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop6", "oopcs\Workshops\Workshop6\Workshop6.csproj", "{FDADB17E-9F8C-4AA8-B952-F39E6FD29F03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day6", "oopcs\Lectures\Day6\Day6.csproj", "{2E8ECC71-61C7-4BB3-8AD5-058AFB50650E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalExercise", "oopcs\Workshops\AdditionalExercise\AdditionalExercise.csproj", "{609752B8-ECB3-4B73-B034-C8CE20FF5381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalExercise.Test", "AdditionalExercise.Test\AdditionalExercise.Test.csproj", "{1A4E0FD7-BBBE-43E0-BC59-6BAB5D792196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +95,14 @@ Global
 		{2E8ECC71-61C7-4BB3-8AD5-058AFB50650E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E8ECC71-61C7-4BB3-8AD5-058AFB50650E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E8ECC71-61C7-4BB3-8AD5-058AFB50650E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609752B8-ECB3-4B73-B034-C8CE20FF5381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609752B8-ECB3-4B73-B034-C8CE20FF5381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609752B8-ECB3-4B73-B034-C8CE20FF5381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609752B8-ECB3-4B73-B034-C8CE20FF5381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4E0FD7-BBBE-43E0-BC59-6BAB5D792196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4E0FD7-BBBE-43E0-BC59-6BAB5D792196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4E0FD7-BBBE-43E0-BC59-6BAB5D792196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4E0FD7-BBBE-43E0-BC59-6BAB5D792196}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +119,7 @@ Global
 		{3749AE3F-35CE-4812-B809-6DD6BAA2AA44} = {B588CCC8-1403-4033-B902-C6D34C2EC2F8}
 		{FDADB17E-9F8C-4AA8-B952-F39E6FD29F03} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 		{2E8ECC71-61C7-4BB3-8AD5-058AFB50650E} = {B588CCC8-1403-4033-B902-C6D34C2EC2F8}
+		{609752B8-ECB3-4B73-B034-C8CE20FF5381} = {530F326D-3D55-4F7C-B956-2CDA71A448DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEFAFC6C-1B3C-4A4B-A1ED-EE8180A9F41B}
